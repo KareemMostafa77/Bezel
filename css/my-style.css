@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+/*------------------------ Header Of WebSite ----------------------------*/
+
+header{
+    height: 635px;
+}
+
+
+.layout{
+    
+    background-color: rgba(0,0,0,0.3);
+    height: 635px ;
+    position: absolute;
+    left: 0;
+    top:0;
+    
+}
+
+.carousel-caption{
+
+    bottom: 30%;
+    margin-left: -20px;
+
+    
+}
+
+.carousel-caption h3{
+    font-size: 90px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.carousel-caption p{
+    
+    font-weight: bold;
+}
+
+.header-btn{
+    position: absolute;
+    top: 50%;
+    z-index: 990;
+}
+
+
+
+.header-btn a{
+    width: 50px;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.nav-h-border{
+    height: 90px;
+    width: 1px;
+    z-index: 9999;
+    
+}
+
+.nav-item{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.navbar-nav{
+    position: relative;
+    z-index: 9999;
+}
+
+/* hovers */
+
+.h-contact-btn:hover{
+    
+    background: white !important;
+    color: black !important;
+}
+
+
+
+/* Media Query */
+
+@media(max-width: 576px){ 
+    
+    .navbar-nav{
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px ;
+        position: relative;
+    }
+    
+    .navbar-nav .nav-item a{
+        color: black !important;
+    }
+
+    .carousel-caption{
+        
+        bottom: 30% !important;
+        
+}
+    .carousel-caption h3{
+    font-size: 40px !important;
+}
+    
+    .carousel-caption p{
+    
+    font-weight: bold;
+    font-size: 12px;
+}
+   
+    .navbar-nav .nav-item a:hover{
+    
+    background-color: #17a2b8 !important;
+    color: white !important;
+}
+}
+
+@media(max-width: 991.98px) { 
+    
+    .navbar-nav{
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px ;
+        
+    }
+    
+    .navbar-nav .nav-item a{
+        color: black !important;
+    }
+    
+    header{
+    height: 550px;
+}
+    .layout{
+        height: 550px;
+    }
+    .carousel-caption{
+    
+    bottom: 25%;
+}
+    .carousel-caption h3{
+    font-size: 60px;
+}
+    
+    .navbar-nav .nav-item a:hover{
+    
+    background-color: #17a2b8 !important;
+    color: white !important;
+}
+
+}
+
+/*----------------------- Section 2 ----------------------*/
+
+.s2 p {
+    
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* hovers */
+
+.s2 .btn:hover{
+    
+    background-color: black !important;
+    color: white !important;
+    
+}
+/* media query */
+@media (max-width: 768px){
+    
+    .s2 div{
+        
+        width: 80% !important;
+    }
+    
+}
+
+/*----------------------- Section 3 ----------------------*/
+
+.s3 .nav-tabs a {
+    border: 0;
+    color: black !important;
+    padding: 15px !important;
+    font-size: 12px !important;
+}
+
+.s3 .nav-tabs .active{
+    border-bottom: 1px solid black;
+}
+
+.active p {
+    
+    line-height: 30px;
+}
+
+.s3 .btn:hover{
+    
+    background-color: black !important;
+    color: white !important;
+    
+}
+
+/*----------------------- Section 4 ----------------------*/
+.s4 i {
+    cursor: pointer;
+}
+.member{
+    height: 300px;
+}
+.layout2{
+    height: 300px;
+    background-color: rgba(0, 195, 218, 0.9);
+    top:100px;
+    opacity: 0;
+    transition: all .3s;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Hover */
+.member:hover .layout2{
+    opacity: 1;
+    top:0;
+}
+
+/* media query */
+
+@media (max-width: 576px){
+    
+    .member{
+    height: 400px;
+}
+    .layout2{
+        height: 400px;}
+    
+}
+
+/*------------------Section 5----------------*/
+
+.s5{
+    
+    background-image: url(../images/bg-image-26.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    line-height: 30px;
+}
+
+.layout3{
+    
+    background-color: rgba(0,0,0,0.5);
+    height: inherit;
+}
+
+/*-------------------- Section 6 -------------------*/
+
+.section-title hr{
+    
+    width: 5%;
+    transition: width 1s;
+}
+
+.section-title:hover hr{
+    
+    width: 10%;
+}
+
+.s6 .nav-link{
+    color: black !important;
+    font-weight: 400;
+}
+.nav-item .active{
+    color: #00c3da !important;
+    background-color: white !important;
+    border: 1px solid #00c3da;
+    border-radius: 50px;
+}
+
+
+.image img{
+    
+    transition: transform 2s ;
+}
+
+.img-card{
+    cursor: pointer;
+    top:80%;
+    left: 12.5%;
+    background-color: white;
+    opacity: 0;
+    transition: all .5s;
+    
+}
+
+.img-card h6{
+    opacity: 0;
+    transition: opacity .5s .5s;
+}
+
+.img-card small{
+    opacity: 0;
+    transition: opacity .5s 1s;
+}
+
+.image:hover img{
+    
+    transform: scale(1.3,1.3);
+    
+    
+}
+
+.image:hover div , .image:hover h6 , .image:hover small {
+    opacity: 1;
+    top: 60%;
+    
+    
+}
+
+
+/*------------------------ Section 7 ---------------------------*/
+
+.s7{
+    background-color: #f7f7f7;
+    line-height: 40px;
+}
+
+/*----------------------- Section 8 -----------------------------*/
+ .s8{
+    background-color: #f7f7f7;
+}
+
+.comment-content{
+    top: -75px;
+}
+
+.carousel-inner{
+    overflow: visible !important;
+}
+
+
+
+
+
+
+@media (max-width: 991.98px) { 
+
+.s8 .carousel-item div ,.comment-content {
+        height: 75%;
+        width: 80% !important;
+        margin: auto;
+    }
+    
+    .comment-content img {
+        width: 30% !important;
+        height: 40% !important;
+    }
+    .comment-content h2 {
+        font-size: 26px;
+    }
+    .comment-content{
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 400px) { 
+
+.s8 .carousel-item div ,.comment-content {
+        height: 50%;
+        width: 80% !important;
+        margin: auto;
+    }
+    
+    .comment-content img {
+        width: 30% !important;
+        height: 40% !important;
+    }
+    .comment-content h2 {
+        font-size: 20px;
+    }
+    .comment-content{
+        font-size: 10px;
+    }
+    
+}
+/*-------------------------Section 10-------------------------------*/
+
+.s10,footer{
+    background-color: #f7f7f7;
+}
+
+/*------------------------ Footer ---------------------------------*/
+
+footer .icon{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
